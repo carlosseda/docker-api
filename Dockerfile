@@ -4,7 +4,6 @@ USER root
 RUN apk update && apk add --no-cache tzdata
 ENV TZ=Europe/Madrid
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN systemctl restart systemd-timesyncd
 USER node
 
 RUN mkdir -p /usr/src/app
