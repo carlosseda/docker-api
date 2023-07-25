@@ -34,7 +34,7 @@ services:
             - db_password
             - db_root_password
         logging:
-            driver: none
+            driver: json-file
     nginx:
         image: nginx:alpine
         restart: always
@@ -46,7 +46,7 @@ services:
         links:
             - app:app
         logging:
-            driver: none
+            driver: json-file
 secrets:
     db_password:
         file: ./secrets/db_password.txt
