@@ -22,4 +22,4 @@ RUN npm install --quiet --no-progress && npm cache clean --force
 
 COPY . .
 
-CMD ["node", "index.js"]
+CMD ["node", "server.js"]
