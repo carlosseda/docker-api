@@ -20,7 +20,9 @@ services:
     mysql:
         image: mysql
         restart: always
+        command: --init-file /data/application/init.sql
         volumes:
+            - ./init.sql:/data/application/init.sql
             - ./.db:/var/lib/mysql
             - /etc/localtime:/etc/localtime:ro
         ports:
