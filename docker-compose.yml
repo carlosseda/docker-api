@@ -5,7 +5,7 @@ services:
             context: .
             args:
               - NODE_ENV=development
-        command: ./node_modules/.bin/nodemon --inspect=0.0.0.0:9229 server.js
+        command: pm2-runtime server.js
         depends_on:
             - mysql
         volumes:
@@ -43,12 +43,23 @@ services:
         volumes:
             - ./nginx.conf:/etc/nginx/nginx.conf
             - ./src:/opt/html
+            - ./certbot/conf:/etc/letsencrypt
+            - ./certbot/www:/var/www/certbot
         ports:
             - 80:80
+            - 443:443
         links:
             - app:app
         logging:
             driver: json-file
+    #https://www.programonaut.com/setup-ssl-with-docker-nginx-and-lets-encrypt/
+    certbot:
+        image: certbot/certbot
+        container_name: certbot
+        volumes: 
+          - ./certbot/conf:/etc/letsencrypt
+          - ./certbot/www:/var/www/certbot
+        command: certonly --webroot -w /var/www/certbot --force-renewal --email {email} -d {domain} --agree-tos
 secrets:
     db_password:
         file: ./secrets/db_password.txt

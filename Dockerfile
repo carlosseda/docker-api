@@ -19,7 +19,8 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 RUN npm install --quiet --no-progress && npm cache clean --force
+RUN npm install pm2 -g
 
 COPY . .
 
-CMD ["node", "server.js"]
+CMD ["pm2-runtime", "server.js"]

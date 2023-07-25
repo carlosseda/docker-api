@@ -3,8 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-      "docker:start": "docker-compose up --build || true",
-      "docker:stop": "docker-compose down"
+      "start": "pm2-runtime server.js"
     },
     "engines": {
       "node": ">=10.9.0"
