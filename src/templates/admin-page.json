@@ -1,0 +1,83 @@
+{
+  "page": {
+    "body": {
+      "style": {
+        "backgroundColor": "#2a4cbb",
+        "display": "flex",
+        "flexDirection": "column",
+        "fontFamily": "Arial, sans-serif",
+        "margin": "0 auto",
+        "minHeight": "100vh",
+        "width": "100%"
+      }
+    },
+    "header": {
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "10vh",
+        "justifyContent": "center",
+        "padding": "0.5em 5%",
+        "width": "90%"
+      },
+      "rows": {
+        "row1": {
+          "style": {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": "100%"
+          },
+          "components": {
+            "logo": {
+              "name": "logo-component",
+              "title": "OnePage"
+            },
+            "pageTitle": {
+              "name": "title-component",
+              "title": "Generador de recursos"
+            },
+            "menu": {
+              "name": "menu-component",
+              "menu": "admin-header"
+            }
+          }
+        }
+      }
+    },
+    "main": {
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "0 auto",
+        "width": "90%"
+      },
+      "rows": {
+        "row1": {
+          "style": {
+            "width": "100%"
+          },
+          "components": {
+            "overlayerComponent": {
+              "name": "overlayer-component"
+            },
+            "deleteElementModalComponent": {
+              "name": "delete-element-modal-component"
+            },
+            "alertMessageComponent": {
+              "name": "alert-message-component"
+            },
+            "crudComponent": {
+              "name": "crud-component",
+              "url": "{{url}}"
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "style": {}
+    }
+  }
+}

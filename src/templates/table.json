@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "email": {
+      "label": "Email"
+    },
+    "name": {
+      "label": "Nombre"
+    },
+    "surname": {
+      "label": "Apellidos"
+    }
+  },
+  "buttons": {
+    "edit": true,
+    "remove": true
+  }
+}

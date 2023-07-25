@@ -1,0 +1,46 @@
+{
+  "tabs": {
+    "filter": {
+      "label": "Filtros de búsqueda"
+    },
+    "openAI": {
+      "label": "OpenAI"
+    }
+  },
+  "tabsContent": {
+    "filter": {
+      "rows": {
+        "row1": {
+          "formElements": {
+            "email": {
+              "label": "Email",
+              "element": "input",
+              "type": "email",
+              "placeholder": "",
+              "required": true,
+              "validate": "email"
+            },
+            "mobile": {
+              "label": "Móvil",
+              "element": "input",
+              "type": "text",
+              "validate": "only-numbers"
+            }
+          }
+        }
+      }
+    },
+    "openAI": {
+      "rows": {
+        "row1": {
+          "formElements": {
+            "prompt": {
+              "label": "¿Qué datos quieres ver?",
+              "element": "textarea"
+            }
+          }
+        }
+      }
+    }
+  }
+}

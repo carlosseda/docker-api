@@ -1,0 +1,256 @@
+{
+  "tabs": {
+    "main": {
+      "label": "Principal"
+    },
+    "images": {
+      "label": "Imágenes"
+    }
+  },
+  "tabsContent": {
+    "main": {
+      "rows": {
+        "row1": {
+          "formElements": {
+            "id": {
+              "element": "input",
+              "type": "hidden"
+            },
+            "name": {
+              "label": "Nombre",
+              "element": "input",
+              "maxLength": "10",
+              "type": "text",
+              "placeholder": "",
+              "required": true,
+              "validate": "only-letters"
+            },
+            "email": {
+              "label": "Email",
+              "element": "input",
+              "type": "email",
+              "placeholder": "",
+              "required": true,
+              "validate": "email"
+            }
+          }
+        },
+        "row2": {
+          "formElements": {
+            "password": {
+              "label": "Contraseña",
+              "element": "input",
+              "type": "password",
+              "placeholder": "",
+              "required": true
+            },
+            "repeatPassword": {
+              "label": "Repita la contraseña",
+              "element": "input",
+              "type": "password",
+              "placeholder": "",
+              "required": true
+            }
+          }
+        },
+        "row3": {
+          "formElements": {
+            "permissions": {
+              "label": "Permisos",
+              "element": "input",
+              "type": "checkbox",
+              "required": true,
+              "options": [
+                {
+                  "label": "Crear",
+                  "value": "create",
+                  "checked": true
+                },
+                {
+                  "label": "Leer",
+                  "value": "read"
+                },
+                {
+                  "label": "Actualizar",
+                  "value": "update"
+                },
+                {
+                  "label": "Eliminar",
+                  "value": "delete"
+                }
+              ]
+            },
+            "sex": {
+              "label": "Sexo",
+              "element": "input",
+              "type": "radio",
+              "required": true,
+              "options": [
+                {
+                  "label": "Masculino",
+                  "value": "M",
+                  "checked": true
+                },
+                {
+                  "label": "Femenino",
+                  "value": "F"
+                }
+              ]
+            }
+          }
+        },
+        "row4": {
+          "formElements": {
+            "color": {
+              "label": "Color",
+              "element": "input",
+              "type": "color",
+              "placeholder": ""
+            },
+            "role": {
+              "label": "Rol",
+              "element": "select",
+              "required": true,
+              "options": [
+                {
+                  "label": "Administrador",
+                  "value": "admin"
+                },
+                {
+                  "label": "Usuario",
+                  "value": "user"
+                }
+              ]
+            }
+          }
+        },
+        "row5": {
+          "formElements": {
+            "edad": {
+              "label": "Edad",
+              "element": "input",
+              "type": "number",
+              "placeholder": "",
+              "required": true
+            },
+            "telefono": {
+              "label": "Teléfono",
+              "element": "input",
+              "type": "tel",
+              "placeholder": "",
+              "required": true
+            },
+            "url": {
+              "label": "URL",
+              "element": "input",
+              "type": "url",
+              "placeholder": "",
+              "required": true
+            }
+          }
+        },
+        "row6": {
+          "formElements": {
+            "creationDate": {
+              "label": "Fecha de creación",
+              "element": "input",
+              "type": "date",
+              "placeholder": "",
+              "required": true,
+              "validate": "date"
+            },
+            "creationTime": {
+              "label": "Hora de creación",
+              "element": "input",
+              "type": "time",
+              "placeholder": "",
+              "required": true
+            }
+          }
+        },
+        "row7": {
+          "formElements": {
+            "reservationWeek": {
+              "label": "Semana de reserva",
+              "element": "input",
+              "type": "week",
+              "placeholder": "",
+              "required": true
+            },
+            "reservationMonth": {
+              "label": "Mes de reserva",
+              "element": "input",
+              "type": "month",
+              "placeholder": "",
+              "required": true
+            },
+            "reservationDateTime": {
+              "label": "Fecha y hora",
+              "element": "input",
+              "type": "datetime-local",
+              "placeholder": "",
+              "required": true
+            }
+          }
+        },
+        "row8": {
+          "formElements": {
+            "capital": {
+              "label": "Capital",
+              "element": "input",
+              "type": "range",
+              "min": 0,
+              "max": 100,
+              "step": 1,
+              "value": 50,
+              "placeholder": ""
+            }
+          }
+        },
+        "row9": {
+          "formElements": {
+            "pdf": {
+              "label": "Pdf",
+              "element": "input",
+              "type": "file",
+              "placeholder": "",
+              "required": true
+            },
+            "search": {
+              "label": "Buscar",
+              "element": "input",
+              "type": "search",
+              "placeholder": "",
+              "required": true
+            }
+          }
+        },
+        "row10": {
+          "formElements": {
+            "description": {
+              "label": "Descripción",
+              "element": "textarea",
+              "maxLength": 100,
+              "placeholder": "",
+              "required": true
+            }
+          }
+        }
+      }
+    },
+    "images": {
+      "rows": {
+        "row1": {
+          "formElements": {
+            "flyer": {
+              "label": "Flyer",
+              "element": "input",
+              "type": "file",
+              "quantity": "multiple"
+            }
+          }
+        }
+      }
+    }
+  }
+}
